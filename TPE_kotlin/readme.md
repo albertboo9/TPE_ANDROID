@@ -1,1 +1,1 @@
-# ici seront conservés tous mes premiers code en kotlin
+# ici seront conservés tous mes premiers code en kotlin, pour le développement android
