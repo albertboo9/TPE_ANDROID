@@ -1,17 +1,15 @@
 open class Animal(val nom: String, val age: Int) {
-    open fun faireDuBruit() {
-        println("L'animal fait du bruit.")
-    }
+
 }
 
 class Chien(nom: String, age: Int) : Animal(nom, age) {
-    override fun faireDuBruit() {
+    fun aboyer() {
         println("$nom aboie !")
     }
 }
 
 class Chat(nom: String, age: Int) : Animal(nom, age) {
-    override fun faireDuBruit() {
+    fun miauler() {
         println("$nom miaule !")
     }
 }
@@ -20,6 +18,6 @@ fun main() {
     val monChien = Chien("Médor", 3)
     val monChat = Chat("Félix", 2)
 
-    monChien.faireDuBruit()
-    monChat.faireDuBruit()
+    monChien.aboyer()
+    monChat.miauler()
 }
