@@ -1,13 +1,15 @@
-class voiture(private var marque: String, private var modele: String, private var annee : Int, private var kilometrage: Int){
-    public afficherDetails(){
-        print("la marque de la voiture est : ", marque,
-         "\n modèle de la voiture :", modele, 
-         "\n l'année de la voiture: :", annee, 
-         "\n le kilometrage est :", kilometrage)
-       
+class Voiture(val marque: String, val modele: String, val annee: Int, var kilometrage: Int) {
+
+    fun afficherDetails() {
+        println("Marque: $marque \n Modèle: $modele \n Année: $annee \n Kilométrage: $kilometrage km")
     }
 
-    public conduire(km: Int ){
-        kilometrage += km
+    fun conduire(km: Int) {
+        if (km > 0) {
+            kilometrage += km
+            println("La voiture a parcouru $km km supplémentaires.")
+        } else {
+            println("La distance parcourue doit être positive.")
+        }
     }
 }
