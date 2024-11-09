@@ -1,4 +1,4 @@
-class Voiture(val marque: String, val modele: String, val annee: Int, var kilometrage: Int) {
+class Voiture(val marque: String, var modele: String, val annee: Int, var kilometrage: Int) {
 
     fun afficherDetails() {
         println("Marque: $marque \n Modèle: $modele \n Année: $annee \n Kilométrage: $kilometrage km")
